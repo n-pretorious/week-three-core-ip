@@ -4,8 +4,8 @@ import random
 
 def getPassLength():
     '''
-      Retrieves the length of a password
-      :returns number <class 'int'>
+    Retrieves the length of a password
+    :returns number <class 'int'>
     '''
     length = input("Length of your password: ")
     return int(length)
@@ -18,8 +18,6 @@ def passwordGenerator(length=8):
         if nothing is specified.
     :returns string <class 'str'>
     '''
-
-    length = getPassLength()
 
     password = list(string.ascii_letters + string.punctuation + string.digits)
     random.shuffle(password)
